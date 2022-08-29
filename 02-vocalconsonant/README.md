@@ -31,7 +31,7 @@ input: mbps
 ```
 ### Output
 ```bash
-output: Hanya diperbolehkan 1 hufur
+output: Hanya diperbolehkan 1 huruf
 ```
 ## <br>
 ## Contoh 4
@@ -42,5 +42,5 @@ input: 1
 ```
 ### Output
 ```bash
-output: Hanya diperbolehkan hufur
+output: Hanya diperbolehkan huruf
 ```
