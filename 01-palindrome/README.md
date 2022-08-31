@@ -1,22 +1,24 @@
-# Soal 1 - Palindrome
-Buatlah sebuah program `palindrome` dengan hasil yang diharapkan sebagai berikut:
+package main
 
-## Contoh 1
-```bash
-$ go 01-palindrome/main.go 
-input: katak
-```
-output
-```bash
-output: true
-```
-## <br>
-## Contoh 2
-```bash
-$ go 01-palindrome/main.go 
-susu
-```
-output
-```bash
-false
-```
+import "fmt"
+
+func main() {
+	// True or false
+	status := false
+	fmt.Print("input : ")
+	var word string
+	fmt.Scanf("%s", &word)
+
+	reverse := func(word string) (result string) {
+		for _, v := range word {
+			result = string(v) + result
+		}
+		return
+	}
+
+	if word == reverse(word) {
+		status = true
+	}
+
+	fmt.Println(status)
+}
